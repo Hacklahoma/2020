@@ -6,233 +6,349 @@
 
     <!-- Meta, stylesheets and scripts -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-    <link rel="stylesheet" href="styles/hub/main.css">
-    <link rel="stylesheet" href="styles/hub/mobile.css">
-    <link rel="icon" href="img/assets/hub/favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="icon" href="img/assets/favicon.ico">
     <!-- For reavel on scroll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Title -->
-    <title>Hacklahoma</title>
+    <title>Hacklahoma 2020</title>
 
     <!-- Description for search engines -->
-    <meta name="description" content="Hacklahoma. February 8-9. Come create with us at our third annual hackathon!" />
+    <meta name="description" content="Hacklahoma 2020. February 8-9. Come create with us at our third annual hackathon!" />
   </head>
 
   <body>
-    <!-- TODO: FIX WEIRD BEHAVIOR -->
-    <!-- Background -->
-    <div data-aos="fade-in" class="background-container">
-      <img class="cloud" src="img/assets/hub/cloud-med.svg" alt="">
-      <img class="cloud" src="img/assets/hub/cloud-med.svg" alt="">
-      <img class="cloud" src="img/assets/hub/cloud-small.svg" alt="">
-      <img class="cloud" src="img/assets/hub/cloud-med.svg" alt="">
-      <img class="cloud" src="img/assets/hub/cloud-small.svg" alt="">
-      <img class="cloud" src="img/assets/hub/cloud-small.svg" alt="">
-      <img class="kite" src="img/assets/hub/kite-blue.png" alt="">
-    </div>
+    <!-- nav -->
+    <div class="header-container">
+      <!-- hamburger -->
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <!-- nav content -->
+      <a href="https://hacklahoma.org">
+        <div class="logo-container">
+          <img src="img/assets/logo.png" alt="">
+          <p>HACKLAHOMA</p>
+        </div>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <!-- <li id="home-tab">Home</li> -->
+          <li id="about-tab">About</li>
+          <li id="tracks-tab">Tracks</li>
+          <li id="faq-tab">FAQ</li>
+          <li id="schedule-tab">Schedule</li>
+          <li id="sponsors-tab">Sponsors</li>
+        </ul>
+      </nav>
+      <div class="background bheader">
+        <img src="img/assets/sample-art.png" alt="">
+      </div>
+      <!-- header content -->
+      <div class="section-cover">
+        <div class="section">
+          <div class="header-content">
+            <h1 class="title">
+              Come with ideas,<br>
+              leave with inventions.
+            </h1>
+            <p class="loc-date">February 8-9, 2020 | Norman, OK</p>
+            <p class="register-info">
+              Register to save a spot and let us do the rest <br>
+              Submit before Friday, January 17th at 11:59PM CST!
+            </p>
+            <div class="register">
+              <div id="register-button" style="background:#75C079;" class="button">
+                <p>Register</p>
+              </div>
+              <p class="learn-more">or <a style="cursor: pointer;" onclick="jump('about')">learn more</a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <div class="content-container">
-      <!-- HEADER ------------>
-      <section>
-        <!-- Navbar -->
-        <div class="header-container">
-          <div id="nav-background">
+      <div class="background bright">
+        <img src="img/assets/sample-art-2.png" alt="">
+      </div>
+      <!-- about content -->
+      <div class="section-cover" id="about">
+        <svg class="section-background" preserveAspectRatio="none" x="10" y="0" width="100%" height="100%" viewBox="0 0 1440 665" stroke="none">
+          <path d="M0,0 C616,0 1096,0 1440,100 L1440,665 C1136.70736,651.076176 897.040692,644.114265 721,644.114265 C544.959308,644.114265 304.625975,651.076176 0,665 L0,96 Z"></path>
+        </svg>
+        <div class="section">
+          <div class="about-content">
+            <h1>What's a Hackathon?</h1>
+            <p>University of Oklahoma’s <a href="https://hacklahoma.org">Hacklahoma</a> is known for organizing Oklahoma’s biggest hackathons. Anyone who has an interest in technology attends a hackathon to learn, build and share their creations in a relaxed and collaborative atmosphere. Even those with little to no experience are welcome to attend and learn!</p>
           </div>
-          <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-          <nav>
-            <ul class="nav-links">
-              <li id="home-tab">Home</li>
-              <li id="about-tab">About</li>
-              <li id="newest-tab">2020</li>
-              <li id="archive-tab">Archive</li>
-              <li id="contact-tab">Contact</li>
-            </ul>
-          </nav>
-          <!-- Logo -->
-          <div class="logo-container">
-            <img id="logo" src="img/assets/hub/flying-logo.png" alt="">
-          </div>
-          <!-- Header Content -->
-          <div class="header-text-container">
-            <p class="title">Hacklahoma</p>
-            <p class="subtitle">Join us for Oklahoma's <span class="highlight"> best </span> hackathon!</p>
-            <div class="buttons">
-              <a href="2020">
-                <div style="background:#75C079;" class="button">
-                <p>Hacklahoma 2020</p>
+        </div>
+        <div id="register" class="register-container">
+          <div class="register-item">
+            <img src="img/assets/attendee-background.png">
+            <div class="register-content">
+              <h1>ATTENDEE</h1>
+              <p>Participate in Oklahoma’s biggest hackathon and inspire new innovations.</p>
+              <a href="https://hacklahoma.herokuapp.com"><div class="button">
+                <p>Register</p>
               </div></a>
-              <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScBR51amjtUec0MJSzVzPiop8uZ-a4kqCp5ow6OIsYIQSEHIQ/viewform">
-                <div style="background:#F4D06F;" class="button">
-                <p>Stay updated</p>
+            </div>
+          </div>
+          <div class="register-item">
+            <img src="img/assets/mentor-background.png">
+            <div class="register-content">
+              <h1>MENTOR</h1>
+              <p>Provide guidance and advice to hackers as they build solutions to pressing problems in our community.</p>
+              <div class="button">
+                <p>Register</p>
+              </div>
+            </div>
+          </div>
+          <div class="register-item">
+            <img src="img/assets/volunteer-background.png">
+            <div class="register-content">
+              <h1 style="margin-left: -5px;">VOLUNTEER</h1>
+              <p>Support the hackers and organizers making sure they are well acommodated.</p>
+              <div class="button">
+                <p>Register</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="background bleft">
+        <img src="img/assets/sample-art-3.png" alt="">
+      </div>
+      <!-- tracks content -->
+      <div class="section-cover" id="tracks">
+        <svg class="section-background" preserveAspectRatio="none" x="10" y="0" width="100%" height="100%" viewBox="0 0 1440 665" stroke="none">
+          <path d="M0,0 C616,0 1096,0 1440,100 L1440,665 C1136.70736,651.076176 897.040692,644.114265 721,644.114265 C544.959308,644.114265 304.625975,651.076176 0,665 L0,96 Z"></path>
+        </svg>
+        <div class="section">
+          <div class="track-content">
+            <h1>TRACKS</h1>
+            <div class="tracks-container">
+              <a href="https://github.com/jpa99/HR8-First-Timers-Track" target="_blank"><div class="track-item">
+                <h3>BOTS</h3>
+                <img src="img/assets/sample-track.png" alt="">
               </div></a>
-              <!-- <div style="background:#5B6299;" class="button">
-                <p>Join the team</p>
-              </div> -->
+              <a href="https://github.com/abhmul/DataScienceTrack" target="_blank"><div class="track-item">
+                <h3>DATA SCIENCE</h3>
+                <img src="img/assets/sample-track.png" alt="">
+              </div></a>
+              <a href="https://tutorial.djangogirls.org/en/" target="_blank"><div class="track-item">
+                <h3>WEBSITES</h3>
+                <img src="img/assets/sample-track.png" alt="">
+              </div></a>
             </div>
+            <p>Click a track to learn more.</p>
           </div>
         </div>
-      </section>
+      </div>
 
-      <!-- ABOUT ------------>
-      <!-- for tab link -->
-      <a name="about"></a>
-      <section class="section-container">
-        <div data-aos="fade-right" class="about-container">
-          <div class="video-container right">
-            <img src="img/assets/hub/video-thumbnail.png" alt="">
-          </div>
-          <div class="about-info left">
-            <h1>What's Hacklahoma?</h1>
-            <p>Hacklahoma is an annual 24-hour hackathon held at the University of Oklahoma. Over three hundred students from across the country come to collaborate, build, and share their awesome projects with us! Hacklahoma provides a comfortable learning environment for all hackers to use their creativity and innovation at its full potential.</p>
-          </div>
-        </div>
+      <div class="background bright">
+        <img src="img/assets/sample-art-4.png" alt="">
+      </div>
+      <!-- faq content -->
+      <div class="section-cover" id="faq">
+        <svg class="section-background" preserveAspectRatio="none" x="10" y="0" width="100%" height="100%" viewBox="0 0 1440 665" stroke="none">
+          <path d="M0,0 C616,0 1096,0 1440,100 L1440,665 C1136.70736,651.076176 897.040692,644.114265 721,644.114265 C544.959308,644.114265 304.625975,651.076176 0,665 L0,96 Z"></path>
+        </svg>
+        <div class="section">
+          <div class="faq-content">
+            <h1>FAQ</h1>
+            <div class="faq-container">
+<!--  -->
+                <div class="faq-item" onclick="faqClicked(this)">
+                  <img class="faq-item-img" src="img/assets/arrow-down.svg" alt="">
+                  <div class="faq-item-q">
+                    <p>Who can attend?</p>
+                  </div>
+                  <div class="faq-item-a">
+                    <p>Any student over the age of 18 can participate, regardless of major, background, or skill level.</p>
+                  </div>
+                </div>
+<!--  -->
+                <div class="faq-item" onclick="faqClicked(this)">
+                  <img class="faq-item-img" src="img/assets/arrow-down.svg" alt="">
+                  <div class="faq-item-q">
+                    <p>Does it cost anything?</p>
+                  </div>
+                  <div class="faq-item-a">
+                    <p>Admissions is completely free! Everything is on us. That means meals, drinks, snacks, sleeping areas, and swag are all taken care of. Just bring yourself and your cool ideas!</p>
+                  </div>
+                </div>
+<!--  -->
+                <div class="faq-item" onclick="faqClicked(this)">
+                  <img class="faq-item-img" src="img/assets/arrow-down.svg" alt="">
+                  <div class="faq-item-q">
+                    <p>Any travel reimbursements?</p>
+                  </div>
+                  <div class="faq-item-a">
+                    <p>Yes! We try to be inclusive as possible and will distribute travel reimbursements based on our funding.</p>
+                  </div>
+                </div>
+<!--  -->
+                <div class="faq-item" onclick="faqClicked(this)">
+                  <img class="faq-item-img" src="img/assets/arrow-down.svg" alt="">
+                  <div class="faq-item-q">
+                    <p>Do I need any experience?</p>
+                  </div>
+                  <div id="faq4" class="faq-item-a">
+                    <p>No experience is needed. Whether you're a coder, an artist, or a writer, you'll get to work with various mentors, attend workshops, interact with companies, and learn alongside fellow participants.</p>
+                  </div>
+                </div>
+<!--  -->
+                <div class="faq-item" onclick="faqClicked(this)">
+                  <img class="faq-item-img" src="img/assets/arrow-down.svg" alt="">
+                  <div class="faq-item-q">
+                    <p>Are there teams?</p>
+                  </div>
+                  <div class="faq-item-a">
+                    <p>We encourage everyone to work with a team! Teams may contain up to 4 people. We will also be offering a team-building session at the beginning of the hacking period.</p>
+                  </div>
+                </div>
+<!--  -->
+                <div class="faq-item" onclick="faqClicked(this)">
+                  <img class="faq-item-img" src="img/assets/arrow-down.svg" alt="">
+                  <div class="faq-item-q">
+                    <p>What should I bring?</p>
+                  </div>
+                  <div class="faq-item-a">
+                    <p>To check in, you must show your Student ID. You should also bring a laptop, chargers, toiletries, a change of clothes, sleeping bag, pillow, and anything else you would need for an overnight weekend. Keep in mind that Hacklahoma will last for 24hrs.</p>
+                  </div>
+                </div>
+<!--  -->
+                <div class="faq-item" onclick="faqClicked(this)">
+                  <img class="faq-item-img" src="img/assets/arrow-down.svg" alt="">
+                  <div class="faq-item-q">
+                    <p>What is the Code of Conduct?</p>
+                  </div>
+                  <div class="faq-item-a">
+                    <p>Hacklahoma welcomes students from all backgrounds and values the importance of a safe and all-inclusive space. Anyone attending must adhere to the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" style="font-weight:normal;">MLH Code of Conduct</a>.</p>
+                  </div>
+                </div>
+<!--  -->
+                <div class="faq-item" onclick="faqClicked(this)">
+                  <img class="faq-item-img" src="img/assets/arrow-down.svg" alt="">
+                  <div class="faq-item-q">
+                    <p>Isn't hacking illegal?</p>
+                  </div>
+                  <div class="faq-item-a">
+                    <p>Yes, hacking is illegal. We define a hack as jury-rigging something inelegantly but effectively, usually as a temporary solution to a problem. Like duct taping a hole in a sinking boat to keep it afloat.</p>
+                  </div>
+                </div>
+<!--  -->
+                <div class="faq-item" onclick="faqClicked(this)">
+                  <img class="faq-item-img" src="img/assets/arrow-down.svg" alt="">
+                  <div class="faq-item-q">
+                    <p>Will there be food?</p>
+                  </div>
+                  <div class="faq-item-a">
+                    <p>We will supply food for Saturday’s breakfast, lunch, dinner, and Sunday’s breakfast with plenty of snacks and drinks throughout. All free of charge!</p>
+                  </div>
+                </div>
+<!--  -->
+                <div class="faq-item" onclick="faqClicked(this)">
+                  <img class="faq-item-img" src="img/assets/arrow-down.svg" alt="">
+                  <div class="faq-item-q">
+                    <p>Can I start my project before?</p>
+                  </div>
+                  <div class="faq-item-a">
+                    <p>No, you cannot work or copy past projects. You can brainstorm ideas and collect whatever software and tools you need, as long as the project is completely new.</p>
+                  </div>
+                </div>
+<!--  -->
+                <div class="faq-item" onclick="faqClicked(this)">
+                  <img class="faq-item-img" src="img/assets/arrow-down.svg" alt="">
+                  <div class="faq-item-q">
+                    <p>404: Question Not Found</p>
+                  </div>
+                  <div class="faq-item-a">
+                    <p>If your question wasn’t answered, please feel free to contact us via Instagram, Twitter, Facebook or send us an email to <a href="mailto:team@hacklahom.org" style="font-weight:normal;">team@hacklahom.org</a>.</p>
+                  </div>
+                </div>
 
-        <div data-aos="fade-left" class="about-container">
-          <div class="video-container left">
-            <img src="img/media/hacklahoma-staff-2018_cropped.jpg" alt="">
-          </div>
-          <div class="about-info right">
-            <h1>Who We Are</h1>
-            <p>We are a group of students from the University of Oklahoma who are passionate about fostering innovation and collaboration in Oklahoma’s tech industry. Today, our team consists of 12 individuals across 4 subteams - Marketing, Operations, Sponsoring & Finance, and Technology.</p>
-          </div>
-        </div>
-
-        <div data-aos="fade-right" class="about-container">
-          <div class="video-container right">
-            <img src="img/media/hackers-overhead_cropped.jpg" alt="">
-          </div>
-          <div class="about-info left">
-            <h1>What We Do</h1>
-            <p>Hacklahoma’s mission is to kindle creativity and innovation in Oklahoma and develop a thriving tech community. We strive to be an organization where all of our team members feel included and have opportunities to gain experience and grow.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- ARCHIVE ------------>
-      <!-- for tab link -->
-      <a name="newest"></a>
-      <section class="section-container">
-        <div data-aos="fade-up" id="newest-container">
-          <div class="newest-text">
-            <h1 class="newest-title">Hacklahoma</h1>
-            <div class="highlight"></div><p class="newest-subtitle">in <span>2020</span></p>
-            <div id="newest-button" style="background:#75C079;" class="button">
-              <p>Learn more</p>
-            </div>
-          </div>
-
-          <div id="newest-card" class="newest-card archive-item">
-            <h1>Coming<br>soon</h1>
-            <p>2020</p>
-          </div>
-        </div>
-
-        <div class="archive-container">
-          <a name="archive"></a>
-          <ul class="archive-row2">
-            <li data-aos="fade-right" id="year2019" class="archive-item">
-              <!-- for tab link -->
-
-              <img src="img/assets/logo2019.png">
-              <p>2019<p>
-            </li>
-            <li data-aos="fade-left" id="year2018" class="archive-item">
-              <img src="img/assets/logo2018.png">
-              <p>2018<p>
-              <!-- ignore this anchor for button presses -->
-              <a name="archive-info-anchor"></a>
-            </li>
-          </ul>
-          <!-- Use row with 3 columns when needed -->
-          <!-- <ul class="archive-row3">
-            <li class="archive-item">
-              <img src="img/assets/logo2018.png">
-              <p>2018<p>
-            </li>
-            <li class="archive-item">
-              <img src="img/assets/logo2018.png">
-              <p>2018<p>
-            </li>
-            <li class="archive-item">
-              <img src="img/assets/logo2018.png">
-              <p>2018<p>
-            </li>
-          </ul> -->
-        </div>
-
-        <div id="archive-info">
-          <div class="archive-info-container">
-            <div class="head">
-              <h1 id="year">2020</h1>
-              <a id="archive-website" target="_blank" href=""><div class="button"><p>View website</p></div></a>
-            </div>
-
-            <!-- <div class="line"></div> -->
-
-            <div class="stats">
-              <div class="stats-item">
-                <h1 id="participants">200</h1>
-                <p>participants</p>
+              <div class="faq-column">
               </div>
-              <div class="stats-item">
-                <h1 id="projects">52</h1>
-                <p>projects</p>
+              <div class="faq-column">
               </div>
-              <div class="stats-item">
-                <h1 id="sponsors">21</h1>
-                <p>sponsors</p>
+              <div class="faq-column">
               </div>
+
             </div>
-
-<!-- TODO: TEAM CONTAINER -->
-            <!-- <div id="team-button">
-              <p>Meet the team</p>
-              <img src="img/assets/hub/arrow-down.svg">
-            </div>
-
-            <div class="team-container">
-
-            </div> -->
           </div>
         </div>
-      </section>
-    </div>
-    <div class="bottom-content">
-      <!-- CONTACT ------------>
-      <!-- for tab link -->
-      <div class="bottom-container">
-        <a name="contact"></a>
-        <section data-aos="fade-up" class="section-container">
-          <div class="contact-container">
-            <div class="contact-text">
-              <h1>Contact Our Team</h1>
-              <p>We'd love to hear from you! Contact us at <a href="mailto:team@hacklahoma.org">team@hacklahoma.org</a> or through social media. If you plan on sponsoring us, please visit our <a href="#">Sponsor Packet</a>. We look forward to hearing from you!</p>
-            </div>
-          </div>
-          <div class="social-container">
-            <div class="icons">
-              <a href="https://www.facebook.com/Hacklahoma/" target="_blank"><img src="img/assets/hub/facebook.svg" alt=""></a>
-              <a href="https://twitter.com/hacklahoma" target="_blank"><img src="img/assets/hub/twitter.svg" alt=""></a>
-              <a href="https://www.instagram.com/hacklahoma/" target="_blank"><img src="img/assets/hub/instagram.svg" alt=""></a>
-            </div>
-          </div>
-        </section>
-        <img data-aos="fade-right" id="bottom-plane" src="img/assets/hub/flying-logo.png" alt="">
-        <img id="trees" src="img/assets/hub/trees.png" alt="">
-        <!-- FOOTER ------------>
-          <div class="footer">
-            <p>Copyright © 2019 <b>Hacklahoma</b> ~ Made with ♥ in Norman</p>
-          </div>
-          <div class="footer-background"></div>
-        </div>
-    </div>
+      </div>
 
-    <script src="scripts/hub/scripts.js"></script>
-    <script src="scripts/hub/clouds.js"></script>
+      <div class="background bleft">
+        <img src="img/assets/sample-art-5.png" alt="">
+      </div>
+      <!-- schedule content -->
+      <div class="section-cover" id="schedule">
+        <svg class="section-background" preserveAspectRatio="none" x="10" y="0" width="100%" height="100%" viewBox="0 0 1440 665" stroke="none">
+          <path d="M0,0 C616,0 1096,0 1440,100 L1440,665 C1136.70736,651.076176 897.040692,644.114265 721,644.114265 C544.959308,644.114265 304.625975,651.076176 0,665 L0,96 Z"></path>
+        </svg>
+        <div class="section">
+          <div class="schedule-content">
+            <h1>SCHEDULE</h1>
+            <div class="schedule-container">
+
+            </div>
+            <p>Schedule and location TBD.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="background bright">
+        <img src="img/assets/sample-art-6.png" alt="">
+      </div>
+      <!-- sponsors content -->
+      <div class="section-cover" id="sponsors">
+        <svg class="section-background" preserveAspectRatio="none" x="10" y="0" width="100%" height="100%" viewBox="0 0 1440 665" stroke="none">
+          <path d="M0,0 C616,0 1096,0 1440,100 L1440,665 C1136.70736,651.076176 897.040692,644.114265 721,644.114265 C544.959308,644.114265 304.625975,651.076176 0,665 L0,96 Z"></path>
+        </svg>
+        <div class="section">
+          <div class="sponsors-content">
+            <h1>SPONSORS</h1>
+            <div class="sponsors-container">
+              <a href="https://www.kochind.com/" target="_blank"><img src="img/sponsors/koch.png" alt=""></a>
+              <a href="https://www.boeing.com/" target="_blank"><img src="img/sponsors/boeing.png" alt=""></a>
+              <a href="https://www.sketch.com/" target="_blank"><img src="img/sponsors/sketch.png" alt=""></a>
+              <a href="https://www.lexisnexis.com/" target="_blank"><img src="img/sponsors/lexisNexis.png" alt=""></a>
+            </div>
+            <p>If you are interested in sponsoring, please visit our <a href="">Sponsor Packet</a>.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer content -->
+      <div id="footer">
+        <div class="footer-container">
+          <div class="footer-left">
+            <img src="img/assets/logo.png">
+            <div class="footer-left-content">
+              <h1>HACKLAHOMA</h1>
+              <p>Made with ♥ in Norman</p>
+              <div class="footer-social">
+                <a href="https://twitter.com/hacklahoma"><img src="img/assets/twitter.svg"></a>
+                <a href="https://instagram.com/hacklahoma"><img src="img/assets/instagram.svg"></a>
+                <a href="https://facebook.com/hacklahoma"><img src="img/assets/facebook.svg"></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-right">
+            <a href="mailto:team@hacklahoma.org"><p>Contact</p></a>
+            <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank"><p>Code of Conduct</p>
+            <a href="https://hacklahoma.org"><p>Hacklahoma</p></a>
+            <a onclick="jump('top')"><p>Top of Page</p></a>
+          </div>
+        </div>
+      </div>
+
+    <script src="scripts/scripts.js"></script>
   </body>
 </html>
