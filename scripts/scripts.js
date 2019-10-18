@@ -5,7 +5,7 @@ const tracksTab = document.getElementById("tracks-tab");
 const faqTab = document.getElementById("faq-tab");
 const scheduleTab = document.getElementById("schedule-tab");
 const sponsorsTab = document.getElementById("sponsors-tab");
-const registerButton = document.getElementById("register-button");
+// const registerButton = document.getElementById("register-button");
 
 // homeTab.onclick = function() {jump("")};
 aboutTab.onclick = function() {jump("about")};
@@ -13,7 +13,7 @@ tracksTab.onclick = function() {jump("tracks")};
 faqTab.onclick = function() {jump("faq")};
 scheduleTab.onclick = function() {jump("schedule")};
 sponsorsTab.onclick = function() {jump("sponsors")};
-registerButton.onclick = function() {jump("register")};
+// registerButton.onclick = function() {jump("register")};
 
 function jump(h) {
   if(h == "top") {
