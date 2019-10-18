@@ -142,7 +142,8 @@ nav {
 .header-content {
   display: inline-block;
 }
-
+.header-content .title {
+  font-size: 2.8em;
   letter-spacing: .8px;
 }
 .header-content .loc-date {
@@ -234,7 +235,8 @@ nav {
   position: absolute;
   bottom: 0;
   background: #D4616A;
-  height: 37px;
+  height: 34px;
+  cursor: not-allowed;
 }
 .register-content .button p {
   margin-top: 10px;
