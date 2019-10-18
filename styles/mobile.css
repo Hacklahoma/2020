@@ -7,12 +7,23 @@
 
 /* STYLE FIXES */
 @media (max-width:968px) {
+  /* tabs */
+  .nav-links li {
+    font-size: .8em;
+  }
+  .nav-links {
+    width: 450px;
+  }
+  /* header */
+  .header-content .title {
+    font-size: 2.8em;
+  }
   /* about */
   .about-content h1 {
-    font-size: 26px;
+    font-size: 1.83em;
   }
   .about-content p {
-    font-size: 13px;
+    font-size: .9em;
   }
   /* registering */
   .register-item {
@@ -23,17 +34,16 @@
     height: 180px;
   }
   .register-content h1 {
-    font-size: 23px;
+    font-size: 1.4em;
   }
   .register-content p {
-    font-size: 13px;
+    font-size: .8em;
   }
   .register-content .button {
-    margin-left: 20px;
-    font-size: 14px;
+    margin-left: 0px;
   }
   .register-content .button p {
-    font-size: 14px;
+    font-size: .8em;
   }
 }
 
@@ -98,7 +108,7 @@
   }
   .nav-links li {
     float: right;
-    font-size: 14px;
+    font-size: .9em;
     margin: 0;
   }
   /* global sections */
@@ -111,13 +121,13 @@
     width: 100%;
   }
   .header-content .title {
-    font-size: 32px;
+    font-size: 2.52em;
   }
   .header-content .loc-date {
-    font-size: 14px;
+    font-size: 1em;
   }
   .header-content .register-info {
-    font-size: 14px;
+    font-size: .9em;
   }
   .header-content .register .learn-more {
     margin-top: 9px;
@@ -127,7 +137,7 @@
     height: 36px;
   }
   .button p {
-    font-size: 15px;
+    font-size: 1em;
     margin-top: 10px;
   }
   /* about */
@@ -139,10 +149,10 @@
     margin-left: 10%;
   }
   .about-content h1 {
-    font-size: 22px;
+    font-size: 1.5em;
   }
   .about-content p {
-    font-size: 10px;
+    font-size: .85em;
   }
   /* registering */
   .register-item {
@@ -158,20 +168,20 @@
     height: 138px;
   }
   .register-content h1 {
-    font-size: 18px;
+    font-size: 1.1em;
   }
   .register-content p {
-    margin-top: 10px;
-    font-size: 10px;
+    margin-top: 8px;
+    font-size: .65em;
   }
   .register-content .button {
-    margin-left: 12px;
+    margin-left: 0px;
     height: 30px;
   }
   .register-content .button p {
-    margin-top: 8px;
-    padding: 0 2vw;
-    font-size: 12px;
+    margin-top: 9px;
+    padding: 0 1.3vw;
+    font-size: .74em;
   }
   /* tracks */
   .track-item {
@@ -193,7 +203,6 @@
   .bheader img {
     right: 0;
     left: 0;
-    opacity: .7;
     margin: auto;
   }
   .bright img {
@@ -208,6 +217,16 @@
 
 /* PHONE */
 @media (max-width:520px) {
+  /* header */
+  .header-content .title {
+    font-size: 2em;
+  }
+  .header-content .loc-date {
+    font-size: .9em;
+  }
+  .header-content .register-info {
+    font-size: .8em;
+  }
   /* about */
   .about-content {
     width: 100%;
@@ -220,26 +239,27 @@
     margin: 0;
   }
   .register-content {
-    margin-top: 18px;
+    margin-top: 13px;
     height: 108px;
   }
   .register-content h1 {
-    font-size: 14px;
+    font-size: .8em;
   }
   .register-content p {
-    margin-top: 0px;
-    font-size: 7px;
+    margin-top: 1px;
+    font-size: .5em;
   }
   .register-content .button {
-    margin-left: 14px;
+    margin-left: 4px;
     height: 24px;
     border-radius: 7px;
+    margin-bottom: -5px;
   }
   .register-content .button p {
     margin-top: 6px;
     letter-spacing: .5px;
-    padding: 0 1.8vw;
-    font-size: 10px;
+    padding: 0 1.3vw;
+    font-size: .5em;
   }
   /* footer */
   .footer-container {
@@ -252,24 +272,24 @@
 @media (max-width:430px) {
   /* header */
   .header-content .title {
-    font-size: 23px;
+    font-size: 1.55em;
   }
   .header-content .loc-date {
-    font-size: 11px;
+    font-size: .8em;
   }
   .header-content .register-info {
-    font-size: 10px;
+    font-size: .65em;
   }
   .header-content .register .learn-more {
     margin-top: 9px;
-    font-size: 13px;
+    font-size: .8em;
   }
   /* button */
   .button {
     height: 32px;
   }
   .button p {
-    font-size: 13px;
+    font-size: .8em;
     margin-top: 8px;
   }
   /* footer */

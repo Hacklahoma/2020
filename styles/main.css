@@ -85,7 +85,7 @@ nav {
   top: 18px;
   right: 17.5%;
   list-style: none;
-  width: 470px;
+  width: 600px;
   justify-content: space-around;
   align-items: right;
   z-index: 1;
@@ -93,9 +93,13 @@ nav {
 .nav-links li {
   color: #464646;
   text-decoration: none;
-  font-size: 12px;
+  font-size: .83em;
   letter-spacing: 1px;
   cursor: pointer;
+}
+.nav-links li:hover {
+  color: #000;
+  text-shadow: 2px 1px 1px rgba(0,0,0,.1);
 }
 .logo-container {
   position: absolute;
@@ -138,17 +142,16 @@ nav {
 .header-content {
   display: inline-block;
 }
-.header-content .title {
-  font-size: 36px;
+
   letter-spacing: .8px;
 }
 .header-content .loc-date {
-  font-size: 14px;
+  font-size: 1.2em;
 }
 .header-content .register-info {
   margin-top: 30px;
   color: #464646;
-  font-size: 14px;
+  font-size: 1em;
 }
 .header-content .register {
   display: inline-block;
@@ -218,25 +221,24 @@ nav {
 }
 .register-content h1 {
   text-align: center;
-  font-size: 28px;
+  font-size: 1.7em;
 }
 .register-content p {
   top: 0;
-  margin-top: 15px;
-  font-size: 14px;
+  margin-top: 10px;
+  font-size: 1em;
 }
 .register-content .button {
-  margin-left: 28px;
+  margin-left: 8px;
   display: inline-block;
   position: absolute;
   bottom: 0;
   background: #D4616A;
-  font-size: 14px;
   height: 37px;
 }
 .register-content .button p {
   margin-top: 10px;
-  font-size: 14px;
+  font-size: .95em;
 }
 /* track content */
 #tracks {
@@ -286,7 +288,7 @@ nav {
   text-shadow: 1px 1px 0px #327C99;
 }
 .track-item h3 {
-  font-size: 16px;
+  font-size: 1em;
   margin: 20px 0;
   font-weight: bold;
   letter-spacing: 1px;
@@ -386,16 +388,16 @@ nav {
   transition: transform .5s;
 }
 .faq-item-q {
-  font-size: 14px;
+  font-size: .95em;
   float: left;
   text-align: left;
   padding: 11px 0;
-  margin-top: 2px;
+  margin-top: 3px;
   margin-left: 15px;
 }
 .faq-item-a {
   text-align: left;
-  font-size: 14px;
+  font-size: .9em;
   float: left;
   height: 0;
   margin: 0;
@@ -509,10 +511,10 @@ nav {
 .footer-left-content h1 {
   font-family: 'Bebas';
   letter-spacing: 1px;
-  font-size: 24px;
+  font-size: 1.5em;
 }
 .footer-left-content p {
-  font-size: 10.4px;
+  font-size: .65em;
 }
 .footer-social {
   height: 14px;
@@ -523,10 +525,10 @@ nav {
   margin-right: 20px;
 }
 .footer-right {
-  margin-top: 20px;
+  margin-top: 22px;
   line-height: 20px;
   float: right;
-  font-size: 14px;
+  font-size: .8em;
 }
 .footer-right p:hover {
   text-decoration: underline;
@@ -552,7 +554,7 @@ nav {
 }
 .button p {
   /* text-shadow: 2px 1px 3px rgba(0,0,0, .1); */
-  font-size: 18px;
+  font-size: 1.2em;
   letter-spacing: 1px;
   font-weight: bold;
   color: white;
