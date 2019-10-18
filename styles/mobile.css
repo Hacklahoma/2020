@@ -41,6 +41,7 @@
   }
   .register-content .button {
     margin-left: 0px;
+    bottom: 10px;
   }
   .register-content .button p {
     font-size: .8em;
