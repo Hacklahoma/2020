@@ -235,11 +235,11 @@ nav {
   position: absolute;
   bottom: 0;
   background: #D4616A;
-  height: 34px;
+  height: 37px;
   cursor: not-allowed;
 }
 .register-content .button p {
-  margin-top: 10px;
+  margin-top: 11px;
   font-size: .95em;
 }
 /* track content */
