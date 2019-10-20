@@ -44,11 +44,15 @@ a:hover {
 }
 .bheader img {
   position: absolute;
-  top: 120px;
+  top: 80px;
   right: 20%;
-  width: 300px;
+  width: 400px;
 }
-
+@media (max-width:1220px) {
+  .bheader img {
+    right: 8%;
+  }
+}
 .bright {
   margin-top: 150px;
 }

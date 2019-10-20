@@ -18,6 +18,10 @@
   .header-content .title {
     font-size: 2.8em;
   }
+  .bheader img {
+    right: 5%;
+    opacity: .5;
+  }
   /* about */
   .about-content h1 {
     font-size: 1.83em;
@@ -120,6 +124,7 @@
   .header-content {
     text-align: center;
     width: 100%;
+    padding-top: 48vw;
   }
   .header-content .title {
     font-size: 2.4em;
@@ -202,8 +207,11 @@
     width: 100%;
   }
   .bheader img {
+    top: 50px;
     right: 0;
-    left: 0;
+    left: -40px;
+    width: 60%;
+    opacity: 1;
     margin: auto;
   }
   .bright img {
