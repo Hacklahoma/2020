@@ -160,6 +160,11 @@
   .about-content p {
     font-size: .85em;
   }
+  /* tracks */
+  .track-subtitle {
+    font-size: .85em;
+    width: 400px;
+  }
   /* registering */
   .register-item {
     width: 150px;
@@ -292,6 +297,11 @@
   .header-content .register .learn-more {
     margin-top: 9px;
     font-size: .8em;
+  }
+  /* tracks */
+  .track-subtitle {
+    font-size: .85em;
+    width: 90%;
   }
   /* button */
   .button {
