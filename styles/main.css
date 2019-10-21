@@ -172,6 +172,9 @@ nav {
   color: #75C079;
 }
 /* about */
+#about {
+  margin-top: 100px;
+}
 #about .section {
   margin-top: 50px;
   margin-bottom: 200px;
