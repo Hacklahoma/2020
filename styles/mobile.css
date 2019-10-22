@@ -23,6 +23,9 @@
     opacity: .5;
   }
   /* about */
+  .about-content {
+    width: 90%;
+  }
   .about-content h1 {
     font-size: 1.83em;
   }
@@ -152,7 +155,6 @@
   }
   .about-content {
     width: 80%;
-    margin-left: 10%;
   }
   .about-content h1 {
     font-size: 1.5em;
@@ -244,7 +246,6 @@
   /* about */
   .about-content {
     width: 100%;
-    margin-left: 0;
   }
   /* registering */
   .register-item {

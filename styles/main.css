@@ -190,13 +190,18 @@ nav {
 #about .section {
   margin-top: 50px;
   margin-bottom: 200px;
+  text-align: center;
 }
 #about .section-background {
   fill: #FDF6F6;
 }
 .about-content {
+  text-align: justify;
   color: #D4616A;
-  width: 60%;
+  width: 80%;
+  max-width: 700px;
+  display: inline-block;
+  /* margin-left: 15%; */
 }
 .about-content h1 {
   color: #fff;
@@ -545,10 +550,12 @@ nav {
 .footer-social {
   height: 14px;
   margin-top: 5px;
+  border: 1px solid black;
   position: relative;
 }
 .footer-social img {
   margin-right: 20px;
+  border: 1px solid red;
 }
 .footer-right {
   margin-top: 22px;
