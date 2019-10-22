@@ -72,13 +72,24 @@ a:hover {
 }
 
 /* nav */
+#nav-background {
+  position: fixed;
+  top: -55px;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  transition: .1s;
+  z-index: 2;
+  background-color: white;
+  box-shadow: 2px 2px 15px -5px rgba(0,0,0,.1);
+}
 nav {
-  position: absolute;
+  position: fixed;
   right: 25%;
   top: 0;
   height: 50px;
   width: inherit;
-  z-index: 1;
+  z-index: 3;
   /* below prevents lag when resizing to mobile */
   -webkit-transform: translateX(150px);
   transform: translateX(150px);
@@ -106,10 +117,11 @@ nav {
   text-shadow: 2px 1px 1px rgba(0,0,0,.1);
 }
 .logo-container {
-  position: absolute;
+  position: fixed;
   height: 30px;
   top: 10px;
   left: 10%;
+  z-index: 3;
 }
 .logo-container img {
   height: 100%;

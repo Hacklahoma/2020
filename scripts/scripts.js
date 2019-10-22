@@ -26,6 +26,23 @@ function jump(h) {
   }
 }
 
+/* reveals background of nav bar on scroll */
+update();
+window.onscroll = function() {
+  update();
+}
+addEventListener("resize", update);
+
+
+function update() {
+  var currentScrollPos = window.pageYOffset;
+  if (30 > currentScrollPos) {
+    document.getElementById("nav-background").style.top = "-55px";
+  } else {
+      document.getElementById("nav-background").style.top = "0px";
+  }
+}
+
 /* manages hamburger menu */
 const hamburger = document.querySelector(".hamburger");
 const lines = document.querySelectorAll(".hamburger .line");
