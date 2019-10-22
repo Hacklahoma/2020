@@ -550,12 +550,10 @@ nav {
 .footer-social {
   height: 14px;
   margin-top: 5px;
-  border: 1px solid black;
   position: relative;
 }
 .footer-social img {
   margin-right: 20px;
-  border: 1px solid red;
 }
 .footer-right {
   margin-top: 22px;
