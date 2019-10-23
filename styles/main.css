@@ -87,7 +87,7 @@ a:hover {
   /* background-color: white; */
   background-image: url("../img/assets/otis-redding.png");
   background-repeat: repeat;
-  opacity: 1;
+  opacity: .75;
   background-size: 100px;
 }
 /* nav */
