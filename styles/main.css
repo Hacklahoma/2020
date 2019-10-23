@@ -19,12 +19,13 @@
 html, body {
   font-family: 'Avenir';
   color: black;
+  height: 100%;
 }
-html{
-  background-color: white;
-  background-image: url("../img/assets/white-pattern.png");
-  background-size: 185px;
+.wrapper {
+  min-height: 100% !important;
+  position: absolute;
 }
+
 a {
   text-decoration: none;
   font-weight: bold;
@@ -75,7 +76,20 @@ a:hover {
   left: 10%;
   width: 150px;
 }
-
+.pattern-overlay {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  min-height: 100% !important;
+  height: 100%;
+  width: 100vw;
+  pointer-events: none;
+  /* background-color: white; */
+  background-image: url("../img/assets/otis-redding.png");
+  background-repeat: repeat;
+  opacity: 1;
+  background-size: 100px;
+}
 /* nav */
 #nav-background {
   position: fixed;
@@ -198,8 +212,8 @@ nav {
   text-align: center;
 }
 #about .section-background {
+  fill: #FDF6F6;
   /* fill: url("../img/assets/red-pattern.png"); */
-  /* filter: invert(100%); */
 }
 .about-content {
   text-align: justify;
@@ -519,8 +533,9 @@ nav {
 /* footer */
 #footer {
   margin-top: 100px;
-  background-image: url("../img/assets/footer-pattern.png");
-  background-size: 185px;
+  background-color: #F2F7FF;
+  /* background-image: url("../img/assets/footer-pattern.png");
+  background-size: 130px; */
   height: 120px;
   width: 100vw;
   position: relative;
