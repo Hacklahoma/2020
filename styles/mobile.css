@@ -251,7 +251,10 @@
   .register-item {
     width: 120px;
     height: calc(1.20533333333 * 120px);
-    margin: 0;
+    margin: 2px;
+  }
+  .register-item:nth-child(3) {
+    margin-top: 5px;
   }
   .register-content {
     margin-top: 13px;
@@ -262,7 +265,7 @@
   }
   .register-content p {
     margin-top: 3px;
-    font-size: 7px;
+    font-size: 8px;
   }
   .register-content .button {
     margin-left: 4px;
@@ -299,10 +302,47 @@
     margin-top: 9px;
     font-size: .8em;
   }
+  /* registering */
+  .register-item {
+    width: 100px;
+    height: calc(1.20533333333 * 100px);
+    margin: 1px;
+  }
+  .register-content {
+    margin-top: 13px;
+    height: 108px;
+  }
+  .register-content h1 {
+    font-size: .8em;
+  }
+  .register-content p {
+    margin-top: 3px;
+    font-size: 7.25px;
+  }
+  .register-content .button {
+    margin-left: 0px;
+    height: 20px;
+    border-radius: 7px;
+    margin-bottom: 5px;
+  }
+  .register-content .button p {
+    margin-top: 6px;
+    width: 56px;
+    letter-spacing: auto;
+    padding: 0 8px;
+    font-size: 8px;
+  }
   /* tracks */
   .track-subtitle {
     font-size: .85em;
     width: 90%;
+  }
+  .track-item {
+    margin: 0 5px;
+    font-size: .8em;
+  }
+  .track-item img {
+    height: 85px;
   }
   /* button */
   .button {
