@@ -317,7 +317,8 @@
   }
   .register-content p {
     margin-top: 3px;
-    font-size: 7.25px;
+    font-size: 7.4px;
+    line-height: 9px;
   }
   .register-content .button {
     margin-left: 0px;
@@ -326,7 +327,7 @@
     margin-bottom: 5px;
   }
   .register-content .button p {
-    margin-top: 6px;
+    margin-top: 5px;
     width: 56px;
     letter-spacing: auto;
     padding: 0 8px;
