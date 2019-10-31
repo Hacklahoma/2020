@@ -212,6 +212,7 @@ nav {
   text-align: center;
 }
 #about .section-background {
+  height: 340px;
   fill: #FDF6F6;
   /* fill: url("../img/assets/red-pattern.png"); */
 }
@@ -235,7 +236,7 @@ nav {
 /* registering */
 .register-container {
   margin-top: -150px;
-  position: absolute;
+  position: relative;
   width: 100%;
   text-align: center;
 }
@@ -274,13 +275,13 @@ nav {
   font-size: 1em;
 }
 .register-content .button {
-  margin-left: 8px;
+  margin-left: 26px;
   display: inline-block;
   position: absolute;
   bottom: 0;
   background: #D4616A;
   height: 37px;
-  cursor: not-allowed;
+  cursor: pointer;
 }
 .register-content .button p {
   margin-top: 11px;
@@ -288,7 +289,7 @@ nav {
 }
 /* track content */
 #tracks {
-  margin-top: 200px;
+  margin-top: 150px;
 }
 #tracks .section {
   margin-top: 50px;

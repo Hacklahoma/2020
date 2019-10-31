@@ -32,6 +32,9 @@
   .about-content p {
     font-size: .9em;
   }
+  #about .section-background {
+    height: 300px;
+  }
   /* registering */
   .register-item {
     width: 200px;
@@ -47,7 +50,7 @@
     font-size: .8em;
   }
   .register-content .button {
-    margin-left: 0px;
+    margin-left: 21px;
     bottom: 10px;
   }
   .register-content .button p {
@@ -133,10 +136,10 @@
     font-size: 2.4em;
   }
   .header-content .loc-date {
-    font-size: 1em;
+    font-size: 1.1em;
   }
   .header-content .register-info {
-    font-size: .9em;
+    font-size: 1em;
   }
   .header-content .register .learn-more {
     margin-top: 9px;
@@ -151,7 +154,10 @@
   }
   /* about */
   #about .section {
-    margin-bottom: 130px;
+    margin-bottom: 150px;
+  }
+  #about .section-background {
+    height: 300px;
   }
   .about-content {
     width: 80%;
@@ -185,15 +191,16 @@
   }
   .register-content p {
     margin-top: 8px;
-    font-size: 10px;
+    font-size: .65em;
   }
   .register-content .button {
-    margin-left: 0px;
+    margin-left: 10px;
     height: 30px;
+    top: 106px;
   }
   .register-content .button p {
-    margin-top: 9px;
-    padding: 0 1.3vw;
+    margin-top: 8px;
+    padding: 0 15px;
     font-size: .74em;
   }
   /* tracks */
@@ -234,29 +241,32 @@
 /* PHONE */
 @media (max-width:520px) {
   /* header */
+  .section:nth-child(1) {
+    width: 100%;
+  }
   .header-content .title {
-    font-size: 2em;
+    font-size: 7.9vw;
   }
   .header-content .loc-date {
-    font-size: .9em;
+    font-size: 1.1em;
   }
   .header-content .register-info {
-    font-size: .8em;
+    font-size: 1em;
   }
   /* about */
   .about-content {
     width: 100%;
   }
   /* registering */
-  .register-item {
+  /* .register-item {
     width: 120px;
     height: calc(1.20533333333 * 120px);
     margin: 2px;
-  }
+  } */
   .register-item:nth-child(3) {
     margin-top: 5px;
   }
-  .register-content {
+  /* .register-content {
     margin-top: 13px;
     height: 108px;
   }
@@ -278,7 +288,7 @@
     letter-spacing: .5px;
     padding: 0 1.3vw;
     font-size: .5em;
-  }
+  } */
   /* footer */
   .footer-container {
     width: 95%;
@@ -289,49 +299,55 @@
 /* SMALL SMALL... */
 @media (max-width:430px) {
   /* header */
-  .header-content .title {
-    font-size: 1.55em;
-  }
   .header-content .loc-date {
-    font-size: .8em;
+    font-size: 1em;
   }
   .header-content .register-info {
-    font-size: .65em;
+    font-size: .75em;
   }
   .header-content .register .learn-more {
     margin-top: 9px;
     font-size: .8em;
   }
   /* registering */
+  .register-item:nth-child(1) {
+    margin-top: 0;
+  }
+  .register-item:nth-child(4) {
+    margin-bottom: -100px;
+  }
   .register-item {
-    width: 100px;
-    height: calc(1.20533333333 * 100px);
-    margin: 1px;
+    width: 200px;
+    height: calc(1.20533333333 * 200px);
+    margin: 13px;
   }
   .register-content {
     margin-top: 13px;
-    height: 108px;
+    height: 200px;
   }
   .register-content h1 {
-    font-size: .8em;
+    font-size: 1.4em;
+    margin-top: 10px;
   }
   .register-content p {
-    margin-top: 3px;
-    font-size: 7.4px;
-    line-height: 9px;
+    margin-top: 15px;
+    font-size: .8em;
   }
   .register-content .button {
-    margin-left: 0px;
-    height: 20px;
+    margin-left: 20px;
+    height: 30px;
     border-radius: 7px;
-    margin-bottom: 5px;
+    top: 160px;
   }
   .register-content .button p {
     margin-top: 5px;
-    width: 56px;
+    width: auto;
     letter-spacing: auto;
-    padding: 0 8px;
-    font-size: 8px;
+    padding: 0 15px;
+    font-size: 1em;
+  }
+  #about .section-background {
+    height: 360px;
   }
   /* tracks */
   .track-subtitle {
