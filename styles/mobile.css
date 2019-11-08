@@ -60,6 +60,9 @@
 
 /* TABLET */
 @media (max-width:720px) {
+  #mlh-trust-badge {
+    right: 85px !important;
+  }
   /* nav bar/hamburger */
   .hamburger .line {
     width: 30px;
