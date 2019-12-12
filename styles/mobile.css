@@ -79,7 +79,7 @@
     width: 150px;
     height: 150vh;
     background: #fff;
-    z-index: 2;
+    z-index: 4;
     box-shadow: 3px 3px 15px -5px rgba(0,0,0,.5);
     -webkit-transform: translateX(150px);
     transform: translateX(150px);
@@ -88,9 +88,9 @@
   .hamburger {
     position: fixed;
     cursor: pointer;
-    right: 5%;
+    right: 5% !important;
     top: 10px;
-    z-index: 3;
+    z-index: 5;
   }
   .nav-links {
     right: 40px;
@@ -238,6 +238,9 @@
   .bleft img {
     left: 10px;
     width: 100px;
+  }
+  .live.bheader img {
+    top: 120px;
   }
 }
 

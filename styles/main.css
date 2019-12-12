@@ -27,6 +27,7 @@ html, body {
 }
 
 a {
+  color: #3663D0;
   text-decoration: none;
   font-weight: bold;
 }
@@ -291,6 +292,9 @@ nav {
 #tracks {
   margin-top: 150px;
 }
+#tracks a {
+  text-decoration: none;
+}
 #tracks .section {
   margin-top: 50px;
   width: 100%;
@@ -412,7 +416,6 @@ nav {
   }
 }
 
-
 .faq-item {
   display: inline-block;
   border: 1px solid #22691A;
@@ -479,7 +482,7 @@ nav {
 .schedule-content {
   text-align: center;
 }
-.schedule-content h1 {
+/* .schedule-content h1 {
   color: #FFF;
   text-shadow: 3px 2px 0px #B157B7;
   -webkit-text-stroke: 1px;
@@ -487,13 +490,13 @@ nav {
 }
 .schedule-content p {
   color: #B157B7;
-}
-.schedule-container {
+} */
+/* .schedule-container {
   height: 0px;
   margin-top: 10px;
   opacity: .1;
   margin-bottom: 30px;
-}
+} */
 /* sponsors content */
 #sponsors {
   margin-top: 200px;
@@ -622,4 +625,184 @@ nav {
     0%{}
     50%{}
     100%{}
+}
+
+
+/** -------------- 
+    LIVE PAGE
+-------------- **/
+
+.title.live {
+  color: #141B4A;
+}
+.subtitle.live {
+  font-size: 20px;
+}
+.slackWifiContainer {
+  display: inline-block;
+}
+.slack, .wifi {
+  margin-top: 20px;
+  width: 350px;
+}
+.slack img, .wifi img {
+  height: 40px;
+  float: left;
+  margin-right: 20px;
+}
+.slack p, .wifi p {
+  padding-top: 3px;
+}
+.live.bheader img {
+  top: 150px;
+}
+/* nav bar/hamburger */
+.hamburger.live .line {
+  width: 30px;
+  height: 3px;
+  background: #25283d;
+  margin: 5px;
+  border-radius: 25px;
+  transition: transform .1s;
+}
+nav.live {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 150px;
+  height: 150vh;
+  background: #fff;
+  z-index: 4;
+  box-shadow: 3px 3px 15px -5px rgba(0,0,0,.5);
+  -webkit-transform: translateX(150px);
+  transform: translateX(150px);
+  transition: transform 200ms linear;
+}
+.hamburger.live {
+  position: fixed;
+  cursor: pointer;
+  right: 37px;
+  top: 10px;
+  z-index: 5;
+}
+.nav-links.live {
+  right: 40px;
+  top: 60px;
+  height: 400px;
+  font-size: 1em;
+  width: auto;
+  flex-direction: column;
+  pointer-events: all;
+}
+nav.live.open {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  transition: transform 200ms linear;
+}
+.hamburger.live .line:nth-child(1).open {
+  transform-origin: center;
+  transform: rotate(45deg) translate(6px, 5px);
+  transition: transform .1s;
+}
+.hamburger.live .line:nth-child(2).open {
+  transform-origin: center;
+  transform: scaleX(0);
+  transition: transform .1s;
+}
+.hamburger.live .line:nth-child(3).open {
+  transform-origin: center;
+  transform: rotate(-45deg) translate(6px, -6px);
+  transition: transform .1s;
+}
+.nav-links.live li {
+  float: right;
+  font-size: .9em;
+  margin: 0;
+}
+.faq-item.live {
+  display: inline-block;
+  border: 1px solid #000;
+  box-shadow: 3px 2px #000;
+  border-radius: 16px;
+  margin: 8px 8px;
+  width: 260px;
+  vertical-align: top;
+  background: white;
+  color: #000;
+  cursor: pointer;
+}
+.track-content.live h1 {
+  color: #141B4A;
+  text-shadow: none;
+  -webkit-text-stroke: 0;
+  -webkit-text-stroke-color: none;
+}
+.sponsors-content.live h1 {
+  color: #141B4A;
+  text-shadow: none;
+  -webkit-text-stroke: 0;
+  -webkit-text-stroke-color: none;
+}
+.track-content.live p {
+  color: black;
+}
+.track-item.live h3 {
+  color: black;
+}
+.faq-content.live h1 {
+  color: #141B4A;
+  text-shadow: none;
+  -webkit-text-stroke: 0;
+  -webkit-text-stroke-color: none;
+}
+.track-item.live:hover {
+  opacity: 1;
+  /* text-decoration: underline;
+  text-decoration-color: #327C99; */
+  -webkit-text-stroke: 0px;
+  -webkit-text-stroke-color: #ccc;
+  color: #fff !important;
+  text-shadow: 1px 1px 0px #ccc;
+}
+#faq.section-cover.live {
+  margin-top: 0;
+}
+#sponsors.section-cover.live {
+  margin-top: 70px;
+}
+#tracks {
+  margin-top: 70px;
+}
+#schedule.section-cover.live {
+  margin-top: 120px;
+}
+#footer.live {
+  background: none;
+}
+#schedule .section {
+  width: 100vw;
+  margin-bottom: 0;
+}
+.schedule-content.live h1 {
+  color: #141B4A;
+  text-shadow: none;
+  -webkit-text-stroke: 0;
+  -webkit-text-stroke-color: none;
+}
+.schedule-container.live {
+  /* background: red; */
+  width: 350px;
+  position: relative;
+  vertical-align: top;
+  display: inline-block;
+}
+.schedule-container.live .item {
+  background: white;
+  box-shadow: 2px 2px 18px -2px rgba(0, 0, 0, .2);
+  display: inline-block;
+  z-index: 6;
+  margin: 6px 0;
+  border-radius: 12px;
+  height: 80px;
+  width: 90%;
 }
