@@ -247,6 +247,20 @@
     width: auto;
     margin: 0 30px;
   }
+  .parking-content.live {
+    text-align: center;
+  }
+  .parking-content.live .left {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .parking-content.live .right {
+    width: 90%;
+    margin: 0;
+  }
 }
 
 /* PHONE */
