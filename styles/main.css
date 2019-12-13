@@ -636,7 +636,8 @@ nav {
   color: #141B4A;
 }
 .subtitle.live {
-  font-size: 20px;
+  font-size: 1.25em;
+  width: 430px;
 }
 .slackWifiContainer {
   display: inline-block;

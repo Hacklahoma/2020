@@ -242,6 +242,11 @@
   .live.bheader img {
     top: 120px;
   }
+  .subtitle.live {
+    font-size: 1.2em;
+    width: auto;
+    margin: 0 30px;
+  }
 }
 
 /* PHONE */
