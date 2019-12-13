@@ -808,3 +808,37 @@ nav.live.open {
   height: 80px;
   width: 90%;
 }
+.location-content.live {
+  color: #141B4A;
+  text-align: center;
+  width: 100%;
+}
+#location .section {
+  width: 100%;
+}
+#parking {
+  margin-top: 50px;
+}
+.location-container.live iframe {
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, .15);
+  margin-top: 20px;
+}
+.parking-content.live .left {
+  width: 35%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.parking-content.live .right {
+  width: 62%;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, .15);
+  margin-left: 2%;
+  height: 400px;
+  border-radius: 12px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+}
+.parking-content.live .left p {
+  line-height: 23px;
+  margin-top: 3px;
+}
