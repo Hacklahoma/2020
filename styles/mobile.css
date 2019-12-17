@@ -12,7 +12,10 @@
     font-size: .8em;
   }
   .nav-links {
-    width: 450px;
+    width: 350px;
+  }
+  nav {
+    right: 35%;
   }
   /* header */
   .header-content .title {
@@ -95,7 +98,7 @@
   .nav-links {
     right: 40px;
     top: 60px;
-    height: 250px;
+    height: 200px;
     width: auto;
     flex-direction: column;
     pointer-events: all;

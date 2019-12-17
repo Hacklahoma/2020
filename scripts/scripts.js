@@ -11,7 +11,7 @@ const sponsorsTab = document.getElementById("sponsors-tab");
 aboutTab.onclick = function() {jump("about")};
 tracksTab.onclick = function() {jump("tracks")};
 faqTab.onclick = function() {jump("faq")};
-scheduleTab.onclick = function() {jump("schedule")};
+// scheduleTab.onclick = function() {jump("schedule")};
 sponsorsTab.onclick = function() {jump("sponsors")};
 // registerButton.onclick = function() {jump("register")};
 
