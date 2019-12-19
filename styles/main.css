@@ -848,7 +848,11 @@ nav.live.open {
   margin-top: 3px;
 }
 .floors-content h1 {
+  margin-bottom: 10px;
   text-align: center;
+}
+.floors-content ul {
+  display: inline-block;
 }
 .floors-content li.active {
   color: black;
@@ -864,5 +868,18 @@ nav.live.open {
   margin-right: 25px;
 }
 .floors-container {
-
+  height: 0;
+  transition: .5s;
+}
+#devonContainer {
+  background: red;
+}
+#galloglyContainer {
+  background: blue;
+}
+#epfContainer {
+  background: green;
+}
+.floors-container.active {
+  height: 300px;
 }

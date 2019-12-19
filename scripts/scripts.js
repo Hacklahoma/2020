@@ -127,15 +127,24 @@ function faqUpdate() {
 const devon = document.getElementById("devon");
 const gallogly = document.getElementById("gallogly");
 const epf = document.getElementById("epf");
+const devonContainer = document.getElementById("devonContainer");
+const galloglyContainer = document.getElementById("galloglyContainer");
+const epfContainer = document.getElementById("epfContainer");
+
 devon.onclick = function () { floorPlan("devon") };
 gallogly.onclick = function () { floorPlan("gallogly") };
 epf.onclick = function () { floorPlan("epf") };
 
 function floorPlan(building) {
   const tab = document.getElementById(building);
+  const container = document.getElementById(building + "Container");
   devon.classList.remove("active");
   gallogly.classList.remove("active");
   epf.classList.remove("active");
+  devonContainer.classList.remove("active");
+  galloglyContainer.classList.remove("active");
+  epfContainer.classList.remove("active");
+  container.classList.add("active");
   tab.classList.add("active");
 }
 
