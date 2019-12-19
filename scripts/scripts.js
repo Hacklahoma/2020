@@ -127,15 +127,25 @@ function faqUpdate() {
 const devon = document.getElementById("devon");
 const gallogly = document.getElementById("gallogly");
 const epf = document.getElementById("epf");
+
 const devonContainer = document.getElementById("devonContainer");
 const galloglyContainer = document.getElementById("galloglyContainer");
 const epfContainer = document.getElementById("epfContainer");
 
+const navLeft = document.getElementById("navLeft");
+const navRight = document.getElementById("navRight");
+
 devon.onclick = function () { floorPlan("devon") };
 gallogly.onclick = function () { floorPlan("gallogly") };
 epf.onclick = function () { floorPlan("epf") };
+navLeft.onclick = function () { floorPrev() };
+navRight.onclick = function () { floorNext() };
+
+var currentBuilding = "devon";
+var currentFloor = Math.floor(Number.MAX_SAFE_INTEGER / 2);
 
 function floorPlan(building) {
+  currentBuilding = building;
   const tab = document.getElementById(building);
   const container = document.getElementById(building + "Container");
   devon.classList.remove("active");
@@ -146,6 +156,28 @@ function floorPlan(building) {
   epfContainer.classList.remove("active");
   container.classList.add("active");
   tab.classList.add("active");
+}
+function floorNext() {
+  if(currentBuilding == "devon") {
+    document.getElementById(currentBuilding + "Floor" + ((currentFloor + 1) % 3)).classList.add("active");
+    document.getElementById(currentBuilding + "Floor" + ((currentFloor) % 3)).classList.remove("active");
+    currentFloor++;
+  }
+  else {
+    document.getElementById(currentBuilding + "Floor0").classList.toggle("active");
+    document.getElementById(currentBuilding + "Floor1").classList.toggle("active");
+  }
+}
+function floorPrev() {
+  if(currentBuilding == "devon") {
+    document.getElementById(currentBuilding + "Floor" + ((currentFloor - 1) % 3)).classList.add("active");
+    document.getElementById(currentBuilding + "Floor" + ((currentFloor) % 3)).classList.remove("active");
+    currentFloor--;
+  }
+  else {
+    document.getElementById(currentBuilding + "Floor0").classList.toggle("active");
+    document.getElementById(currentBuilding + "Floor1").classList.toggle("active");
+  }
 }
 
 /* scroll reveal */
