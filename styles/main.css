@@ -716,9 +716,14 @@ nav.live.open {
   transition: transform .1s;
 }
 .nav-links.live li {
+  border:1px solid black;
+  height: 50px;
   float: right;
   font-size: .9em;
-  margin: 0;
+  padding-top: 15px;
+  padding-left: 15px;
+  vertical-align: middle;
+
 }
 .faq-item.live {
   display: inline-block;
@@ -766,13 +771,13 @@ nav.live.open {
   text-shadow: 1px 1px 0px #ccc;
 }
 #faq.section-cover.live {
-  margin-top: 0;
+  margin-top: 120px;
 }
 #sponsors.section-cover.live {
-  margin-top: 70px;
+  margin-top: 40px;
 }
 #tracks {
-  margin-top: 70px;
+  margin-top: 50px;
 }
 #schedule.section-cover.live {
   margin-top: 120px;
@@ -841,4 +846,23 @@ nav.live.open {
 .parking-content.live .left p {
   line-height: 23px;
   margin-top: 3px;
+}
+.floors-content h1 {
+  text-align: center;
+}
+.floors-content li.active {
+  color: black;
+  border-bottom: 3px solid #3663D0;
+}
+.floors-content li {
+  color: #aaa;
+  list-style: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  cursor: pointer;
+  float: left;
+  margin-right: 25px;
+}
+.floors-container {
+
 }

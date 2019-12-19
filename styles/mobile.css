@@ -127,6 +127,9 @@
     float: right;
     font-size: .9em;
     margin: 0;
+    height: 50px;
+    padding-top: 15px;
+    padding-left: 15px;
   }
   /* global sections */
   .section {

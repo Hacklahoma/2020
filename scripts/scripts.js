@@ -123,6 +123,22 @@ function faqUpdate() {
   }
 }
 
+/* floor plans */
+const devon = document.getElementById("devon");
+const gallogly = document.getElementById("gallogly");
+const epf = document.getElementById("epf");
+devon.onclick = function () { floorPlan("devon") };
+gallogly.onclick = function () { floorPlan("gallogly") };
+epf.onclick = function () { floorPlan("epf") };
+
+function floorPlan(building) {
+  const tab = document.getElementById(building);
+  devon.classList.remove("active");
+  gallogly.classList.remove("active");
+  epf.classList.remove("active");
+  tab.classList.add("active");
+}
+
 /* scroll reveal */
 AOS.init({
   once: true, // whether animation should happen only once - while scrolling down
