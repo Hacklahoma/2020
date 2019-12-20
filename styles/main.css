@@ -810,7 +810,7 @@ nav.live.open {
   z-index: 6;
   margin: 6px 0;
   border-radius: 12px;
-  height: 80px;
+  height: 90px;
   width: 90%;
 }
 .location-content.live {
@@ -906,4 +906,80 @@ nav.live.open {
 #navLeft {
   transform: scaleX(-1);
   margin-right: 30px;
+}
+#schedule .day {
+  font-weight: bold;
+  color: #777;
+  text-align: left;
+  margin-left: 22px;
+  margin-bottom: 5px;
+  font-size: 1.1em;
+}
+#schedule .item .left {
+  position: relative;
+  float: left;
+  height: 100%;
+  /* border: 1px solid black; */
+}
+#schedule .item .right {
+  position: relative;
+  text-align: left;
+  height: 100%;
+  /* border: 1px solid black; */
+}
+#schedule .item .right h3 {
+  margin-top: 24px;
+}
+#schedule .item .right p {
+  margin-top: 3px;
+  font-size: .85em;
+}
+#schedule .item .left p {
+  font-size: .9em;
+  font-weight: bold;
+  margin: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+#schedule .item.blueDouble {
+  height: 133px;
+  background: #3975cf;
+}
+#schedule .item.blueDouble h3 {
+  color: white;
+  margin-top: 16px;
+}
+#schedule .item.blueDouble p {
+  color: white;
+}
+#schedule .item.blueDouble .left p {
+  margin-top: 40px;
+  color: white;
+}
+#schedule .item.blue {
+  color: white;
+  background: #3975cf;
+}
+#schedule .item.green {
+  height: 52px;
+  background: #55b34e;
+}
+#schedule .item.green h3 {
+  color: white;
+  margin-top: 16px;
+}
+#schedule .item.green p {
+  color: white;
+}
+#schedule .item.green .left p {
+  margin-top: 19px;
+}
+#schedule .item.small {
+  height: 70px;
+}
+#schedule .item.small h3 {
+  margin-top: 16px;
+}
+#schedule .item.small .left p {
+  margin-top: 28px;
 }
