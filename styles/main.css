@@ -868,24 +868,31 @@ nav.live.open {
   margin-right: 25px;
 }
 .floors-container {
+  text-align: center;
   height: 0;
   opacity: 0;
   transition: opacity .5s;
+  /* border: 1px solid black; */
 }
 .floors-container.active {
-  height: 300px;
+  height: auto;
   opacity: 1;
 }
 .floorImage {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
   width: 100%;
+  max-width: 600px;
   overflow: hidden;
   display: block;
   height: 0;
-  opacity: 0;
+  opacity: .5;
   transition: opacity .5s;
+  /* border: 1px solid black; */
 }
 .floorImage.active {
-  height: 100%;
+  height: auto;
   opacity: 1;
 }
 .floors-shadowBox {
@@ -898,14 +905,19 @@ nav.live.open {
   padding: 25px 0; 
   width: auto;
   text-align: center;
+  /* border: 1px solid red; */
 }
 .nav-arrows img {
   width: 50px;
+  /* border: 1px solid black; */
   cursor: pointer;
 }
 #navLeft {
   transform: scaleX(-1);
   margin-right: 30px;
+}
+#navRight {
+  transform: scaleX(1);
 }
 #schedule .day {
   font-weight: bold;
