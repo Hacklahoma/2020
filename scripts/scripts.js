@@ -135,11 +135,13 @@ const epfContainer = document.getElementById("epfContainer");
 const navLeft = document.getElementById("navLeft");
 const navRight = document.getElementById("navRight");
 
-devon.onclick = function () { floorPlan("devon") };
-gallogly.onclick = function () { floorPlan("gallogly") };
-epf.onclick = function () { floorPlan("epf") };
-navLeft.onclick = function () { floorPrev() };
-navRight.onclick = function () { floorNext() };
+try {
+  devon.onclick = function () { floorPlan("devon") };
+  gallogly.onclick = function () { floorPlan("gallogly") };
+  epf.onclick = function () { floorPlan("epf") };
+  navLeft.onclick = function () { floorPrev() };
+  navRight.onclick = function () { floorNext() };
+} catch {}
 
 var currentBuilding = "devon";
 var currentFloor = Math.floor(Number.MAX_SAFE_INTEGER / 2);
