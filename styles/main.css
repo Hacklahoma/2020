@@ -995,3 +995,30 @@ nav.live.open {
 #schedule .item.small .left p {
   margin-top: 28px;
 }
+#tracks.live {
+  margin-bottom: -80px;
+}
+#hardware .hardware-content {
+  text-align: center;
+  margin-bottom: 80px;
+  margin-top: -20px;
+}
+#hardware h1 {
+  color:#141B4A;
+  margin-bottom: 15px;
+}
+#hardware .hardware-sub {
+  margin-top: 25px;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+#hardware .hardware-container {
+  display: grid;
+  padding: 0 15px;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  grid-gap: 1rem;
+  justify-items: center;
+  width: auto;
+  margin: auto;
+  max-width: 715px;
+}
