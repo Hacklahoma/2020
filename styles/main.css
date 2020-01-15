@@ -716,14 +716,19 @@ nav.live.open {
   transition: transform .1s;
 }
 .nav-links.live li {
-  border:1px solid black;
+  /* border:1px solid black; */
   height: 50px;
   float: right;
   font-size: .9em;
   padding-top: 15px;
   padding-left: 15px;
   vertical-align: middle;
-
+}
+.nav-links.live a li {
+  margin: 0;
+  padding: 0;
+  height: 30px;
+  font-weight: normal;
 }
 .faq-item.live {
   display: inline-block;

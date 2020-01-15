@@ -4,16 +4,27 @@ const aboutTab = document.getElementById("about-tab");
 const tracksTab = document.getElementById("tracks-tab");
 const faqTab = document.getElementById("faq-tab");
 const scheduleTab = document.getElementById("schedule-tab");
-const sponsorsTab = document.getElementById("sponsors-tab");
+const sponsorsTab = document.getElementById("sponserTab");
+const locationTab = document.getElementById("location-tab");
+const floorPlansTab = document.getElementById("floorplans-tab");
+const prizesTab = document.getElementById("prizes-tab");
+const hardwareTab = document.getElementById("hardware-tab");
+// const backHome = document.getElementById("back-home");
 // const registerButton = document.getElementById("register-button");
-
-// homeTab.onclick = function() {jump("")};
-aboutTab.onclick = function() {jump("about")};
+sponsorsTab.onclick = function() {jump("sponsors")};
 tracksTab.onclick = function() {jump("tracks")};
 faqTab.onclick = function() {jump("faq")};
-// scheduleTab.onclick = function() {jump("schedule")};
-sponsorsTab.onclick = function() {jump("sponsors")};
-// registerButton.onclick = function() {jump("register")};
+
+  // homeTab.onclick = function() {jump("")};
+try { aboutTab.onclick = function () { jump("about") }; } catch { }
+try { scheduleTab.onclick = function() {jump("schedule")}; 
+  locationTab.onclick = function() {jump("location")};
+  floorPlansTab.onclick = function() {jump("floors")};
+  prizesTab.onclick = function() {jump("prizes")};
+  hardwareTab.onclick = function() {jump("hardware")};
+} catch{ }
+  // registerButton.onclick = function() {jump("register")};
+
 
 function jump(h) {
   if(h == "top") {
@@ -22,6 +33,14 @@ function jump(h) {
   else {
     var url = location.href;
     location.href = "#" + h;
+    if(h == "hardware") {
+      scrollBy({
+        top: -100
+      });
+    }
+    scrollBy({
+      top: -100
+    });
     history.replaceState(null,null,url);
   }
 }
