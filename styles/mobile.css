@@ -66,6 +66,9 @@
   #mlh-trust-badge {
     right: 85px !important;
   }
+  #hardware .hardware-item {
+    white-space: normal;
+  }
   /* nav bar/hamburger */
   .hamburger .line {
     width: 30px;
