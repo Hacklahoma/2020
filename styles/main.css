@@ -1067,32 +1067,27 @@ nav.live.open {
   max-width: 850px;
 }
 #prizes .prizes-item {
-  margin: 5px;
-  margin-top: 8px !important;
+  position: relative;
   display: inline-block;
-  width: 235px;
-  border: 4px solid rgba(54, 100, 208, 0.281);
-  border-radius: 10px;
-  box-shadow: 2px 2px 12px rgba(0, 0, 0, .13);
+  margin: 3px 0;
 }
-#prizes .prizes-item h1 {
-  font-size: 1em;
-  font-weight: 600;
-  padding: 15px;
-  padding-bottom: 8px;
-  /* height: 30px; */
+#prizes .prizes-item-img {
+  width: 100px;
+  float: left;
+  margin-right: 30px;
+  height: 100%;
 }
 #prizes .prizes-item img {
-  height: 80px;
+  width: 100%;
 }
-#prizes .prizes-item p {
-  padding: 15px;
+#prizes .prizes-item-content {
+  width: calc(100% - 140px); 
+  float: right;
   text-align: left;
-  font-size: .9em;
+  margin-right: 10px;
 }
-#prizes .prizes-item p .prize {
-  color: #3663D0;
-  font-weight: 600;
+#prizes .prizes-item-content h1 {
+  font-size: 1.5em;
 }
 #confirm h1 {
   color: #D4616A;
