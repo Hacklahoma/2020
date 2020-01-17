@@ -1060,11 +1060,10 @@ nav.live.open {
   /* padding: 0 15px; */
   /* grid-template-columns: repeat(auto-fill, minmax(262px, 1fr)); */
   /* grid-gap: 1.3rem; */
-  justify-items: center;
   width: 100%;
   text-align: center;
   margin: auto;
-  max-width: 850px;
+  max-width: 700px;
 }
 #prizes .prizes-item {
   position: relative;
