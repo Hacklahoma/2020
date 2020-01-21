@@ -335,6 +335,9 @@
 
 /* SMALL SMALL... */
 @media (max-width:430px) {
+  #countdown {
+    font-size: .9em;
+  }
   /* header */
   .header-content .loc-date {
     font-size: 1em;
