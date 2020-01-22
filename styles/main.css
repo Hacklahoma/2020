@@ -624,6 +624,7 @@ nav {
   font-weight: bolder;
   margin-top: 8px;
   font-size: 1em;
+  max-width: 350px;
 }
 
 /* animations */
