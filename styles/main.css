@@ -883,7 +883,7 @@ nav.live.open {
   text-align: center;
   height: 0;
   opacity: 0;
-  transition: opacity .5s;
+  /* transition: opacity .5s; */
   /* border: 1px solid black; */
 }
 .floors-container.active {
@@ -1036,7 +1036,7 @@ nav.live.open {
 }
 #hardware .hardware-item {
   text-align: left;
-  width: 250px;
+  width: 190px;
   white-space: nowrap;
   display: inline-block;
   margin: 2px 4px;
