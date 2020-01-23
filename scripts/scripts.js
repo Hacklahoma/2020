@@ -180,8 +180,8 @@ function floorPlan(building) {
 }
 function floorNext() {
   if(currentBuilding == "devon") {
-    document.getElementById(currentBuilding + "Floor" + ((currentFloor + 1) % 3)).classList.add("active");
-    document.getElementById(currentBuilding + "Floor" + ((currentFloor) % 3)).classList.remove("active");
+    document.getElementById(currentBuilding + "Floor" + ((currentFloor + 1) % 5)).classList.add("active");
+    document.getElementById(currentBuilding + "Floor" + ((currentFloor) % 5)).classList.remove("active");
     currentFloor++;
   }
   else {
@@ -191,8 +191,8 @@ function floorNext() {
 }
 function floorPrev() {
   if(currentBuilding == "devon") {
-    document.getElementById(currentBuilding + "Floor" + ((currentFloor - 1) % 3)).classList.add("active");
-    document.getElementById(currentBuilding + "Floor" + ((currentFloor) % 3)).classList.remove("active");
+    document.getElementById(currentBuilding + "Floor" + ((currentFloor - 1) % 5)).classList.add("active");
+    document.getElementById(currentBuilding + "Floor" + ((currentFloor) % 5)).classList.remove("active");
     currentFloor--;
   }
   else {
