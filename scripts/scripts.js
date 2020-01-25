@@ -202,7 +202,7 @@ function floorPrev() {
 }
 
 /* countdown */
-var countDownDate = new Date("Jan 24, 2020 23:59:59").getTime();
+var countDownDate = new Date("Jan 29, 2020 23:59:59").getTime();
 
 // Update the count down every 1 second
   var x = setInterval(function () {
