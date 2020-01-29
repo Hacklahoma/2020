@@ -69,6 +69,10 @@
   #hardware .hardware-item {
     white-space: normal;
   }
+  .schedule-container.live {
+    width: 97%;
+    max-width: 500px;
+  }
   /* nav bar/hamburger */
   .hamburger .line {
     width: 30px;

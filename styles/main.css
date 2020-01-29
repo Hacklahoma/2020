@@ -804,14 +804,16 @@ nav.live.open {
 }
 .schedule-content.live h1 {
   color: #141B4A;
+  margin-bottom: 30px;
   text-shadow: none;
   -webkit-text-stroke: 0;
   -webkit-text-stroke-color: none;
 }
 .schedule-container.live {
   /* background: red; */
-  margin-top: 30px;
-  width: 350px;
+  margin-top: 0px;
+  min-width: 358px;
+  width: 40%;
   position: relative;
   vertical-align: top;
   display: inline-block;
@@ -823,7 +825,7 @@ nav.live.open {
   display: inline-block;
   z-index: 6;
   margin: 6px 0;
-  border-radius: 12px;
+  border-radius: 10px;
   height: 90px;
   width: 90%;
 }
@@ -934,12 +936,21 @@ nav.live.open {
   transform: scaleX(1);
 }
 #schedule .day {
-  color: #3975cf;
+  color: black;
   text-align: left;
   margin-left: 22px;
   margin-bottom: 0px;
-  font-size: 2em;
-  font-weight: bolder;
+  font-size: 1.6em;
+  font-weight: 600;
+}
+#schedule .day-underline {
+  height: 7px;
+  width: 70px;
+  margin-top: -4px;
+  background: linear-gradient(30deg, #3975cf 50%, #255aaa 50%);;
+  margin-left: 23px;
+  margin-bottom: 10px;
+  border-radius: 2px;
 }
 #schedule .day:nth-child(4) {
   margin-top: 30px !important;  
@@ -967,6 +978,7 @@ nav.live.open {
   font-size: .9em;
   font-weight: bold;
   margin: 20px;
+  margin-top: 39px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -983,7 +995,7 @@ nav.live.open {
   color: white;
 }
 #schedule .item.blueDouble .left p {
-  margin-top: 40px;
+  margin-top: 60px;
   color: white;
 }
 #schedule .item.blue {
