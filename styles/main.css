@@ -1078,6 +1078,7 @@ nav.live.open {
   /* padding: 0 15px; */
   /* grid-template-columns: repeat(auto-fill, minmax(262px, 1fr)); */
   /* grid-gap: 1.3rem; */
+  /* border: 1px solid red; */
   width: 90%;
   text-align: center;
   margin: auto;
@@ -1086,8 +1087,11 @@ nav.live.open {
 #prizes .prizes-item {
   position: relative;
   display: inline-block;
+  overflow: hidden;
   margin: 10px 0;
-  width: 500px;
+  width: 90%;
+  /* border: 1px solid black; */
+  max-width: 500px;
 }
 #prizes .prizes-item h1 {
   margin-bottom: 3px;
@@ -1113,6 +1117,15 @@ nav.live.open {
 }
 #prizes .prizes-item-content h1 {
   font-size: 1.5em;
+}
+@media (max-width:720px) {
+  #prizes .prizes-item-img {
+    width: 50px;
+    margin-right: 0px;
+  }
+  #prizes .prizes-item-content {
+    width: calc(100% - 80px); 
+  }
 }
 #confirm h1 {
   color: #D4616A;
