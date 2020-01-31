@@ -621,10 +621,8 @@ nav {
   user-select: none;
 }
 #countdown {
-  color: #D4616A;
-  font-weight: bolder;
   margin-top: 8px;
-  font-size: 1em;
+  font-size: .9em;
   /* max-width: 350px; */
 }
 
