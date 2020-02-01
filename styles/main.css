@@ -505,12 +505,15 @@ nav {
 #sponsors .section {
   margin-top: 50px;
   margin-bottom: 50px;
+  width: 100%;
+  max-width: 1000px;
 }
 #sponsors .section-background {
   fill: #F4F4F4;
 }
 .sponsors-content {
   text-align: center;
+  width: 100%;
 }
 .sponsors-content h1 {
   color: #FFF;
@@ -531,7 +534,7 @@ nav {
   position: relative;
 }
 .sponsors-container img {
-  width: 25%;
+  width: 200px;
   max-width: 200px;
   margin: 0 10px;
 }
