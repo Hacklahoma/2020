@@ -207,9 +207,9 @@ function mapsSelector() {
     ((navigator.platform.indexOf("iPhone") != -1) ||
     (navigator.platform.indexOf("iPad") != -1) ||
     (navigator.platform.indexOf("iPod") != -1))
-    window.open("maps://maps.google.com/maps?daddr=35.210731,-97.441816&amp;ll=");
+    window.open("maps://maps.google.com/maps?daddr=35.210741,-97.441810&amp;ll=");
   else /* else use Google */
-    window.open("https://maps.google.com/maps?daddr=35.210731,-97.441816&amp;ll=");
+    window.open("https://maps.google.com/maps?daddr=35.210741,-97.441810&amp;ll=");
 }
 
 // /* countdown */
