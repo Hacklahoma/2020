@@ -953,7 +953,7 @@ nav.live.open {
   margin-bottom: 10px;
   border-radius: 2px;
 }
-#schedule .day:nth-child(4) {
+#schedule .day:nth-child(6) {
   margin-top: 30px !important;  
 }
 #schedule .item .left {
@@ -967,6 +967,41 @@ nav.live.open {
   text-align: left;
   height: 100%;
   /* border: 1px solid black; */
+}
+#schedule .workshop {
+  text-align: left;
+  height: auto;
+  background: #3975cf;
+  box-shadow: inset 0px 0px 0px 3px #255aaa;
+  color: white;
+  position: relative;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 6px 0;
+  width: 90%;
+}
+#schedule .workshop .workshop-time {
+  display: inline-block;
+  width: auto;
+  font-size: .9em;
+  font-weight: bold;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  position: absolute;
+}
+#schedule .workshop .workshop-content {
+  text-align: left;
+  position: relative;
+  width: calc(100% - 100px);
+  left: 100px;
+  display: inline-block;
+  padding: 6px 0;
+  /* background: green; */
+}
+#schedule .workshop .workshop-content .workshop-item {
+  margin: 10px 0;
+  margin-right: 12px;
 }
 #schedule .item .right h3 {
   margin-top: 24px;
