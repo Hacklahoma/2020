@@ -63,6 +63,20 @@
 
 /* TABLET */
 @media (max-width:720px) {
+  .slackWifiContainer img {
+    margin-right: 10px;
+    float: left;
+  }
+  .slackWifiContainer div {
+    width: 308px;
+    text-align: left;
+    display: inline-block;
+  }
+  .slackWifiContainer {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+  }
   #mlh-trust-badge {
     right: 85px !important;
   }
