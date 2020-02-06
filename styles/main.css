@@ -982,11 +982,12 @@ nav.live.open {
 }
 #schedule .workshop .workshop-time {
   display: inline-block;
-  width: auto;
+  width: 70px;
+  text-align: center;
   font-size: .9em;
   font-weight: bold;
   top: 50%;
-  left: 20px;
+  left: 15px;
   transform: translateY(-50%);
   position: absolute;
 }
@@ -1002,6 +1003,15 @@ nav.live.open {
 #schedule .workshop .workshop-content .workshop-item {
   margin: 10px 0;
   margin-right: 12px;
+}
+#schedule .workshop-learnMore {
+  text-align: center;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  text-decoration: underline;
+  margin-top: 5px;
+  font-size: .8em;
 }
 #schedule .item .right h3 {
   margin-top: 24px;
@@ -1062,6 +1072,41 @@ nav.live.open {
 }
 #schedule .item.small .left p {
   margin-top: 28px;
+}
+.modal {
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0,0,0,.2);
+  display: none;
+  opacity: 0;
+  transition: .2s;
+}
+.modal-content {
+  z-index: 10010;
+  touch-action: none;
+  position: fixed;
+  top: 50vh;
+  transition: .2s;
+  left: 50vw;
+  transform: translate(-50%, -50%) scale(0);
+  height: auto;
+  width: 300px;
+  border-radius: 10px;
+  padding: 20px;
+  padding-bottom: 35px;
+  background: white;
+}
+.modal-close {
+  color: #D4616A;
+  float: right;
+  font-size: 1.5em;
+  margin-top: -5px;
+}
+.modal-content p {
+  margin-top: 25px;
 }
 #tracks.live {
   margin-bottom: -80px;

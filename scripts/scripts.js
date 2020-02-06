@@ -246,6 +246,27 @@ function mapsSelector() {
 //     }
 //   }, 1000);
 
+function learnMore(message) {
+  document.getElementsByClassName("modal")[0].style.display = "block";
+  setTimeout(() => document.getElementsByClassName("modal")[0].style.opacity = 1, 10);
+  setTimeout(() => document.getElementsByClassName("modal-content")[0].style.transform = "translate(-50%, -50%) scale(1)", 10);
+  document.getElementsByClassName("modal-text")[0].innerHTML = message;
+}
+var cancel = false;
+function cancelClose() {
+  cancel = true;
+  setTimeout(() => cancel=false, 10)
+}
+function hideModal() {
+  if(!cancel) {
+    var modal = document.getElementsByClassName("modal")[0];
+    var modalContent = document.getElementsByClassName("modal-content")[0];
+    modal.style.opacity = 0;
+    modalContent.style.transform = "translate(-50%, -50%) scale(0)";
+    setTimeout(() => modal.style.display = "none", 200);
+  }
+}
+
 /* scroll reveal */
 AOS.init({
   once: true, // whether animation should happen only once - while scrolling down
