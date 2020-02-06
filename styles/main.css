@@ -1005,13 +1005,13 @@ nav.live.open {
   margin-right: 12px;
 }
 #schedule .workshop-learnMore {
-  text-align: center;
   cursor: pointer;
   color: rgb(255, 255, 255);
   font-weight: 400;
   text-decoration: underline;
-  margin-top: 5px;
-  font-size: .8em;
+  font-size: .7em;
+  position: relative;
+  bottom: 1.5px;
 }
 #schedule .item .right h3 {
   margin-top: 24px;
@@ -1093,10 +1093,11 @@ nav.live.open {
   left: 50vw;
   transform: translate(-50%, -50%) scale(0);
   height: auto;
-  width: 300px;
+  min-width: 300px;
+  width: 70vw;
   border-radius: 10px;
   padding: 20px;
-  padding-bottom: 35px;
+  padding-bottom: 20px;
   background: white;
 }
 .modal-close {

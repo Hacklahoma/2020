@@ -246,11 +246,12 @@ function mapsSelector() {
 //     }
 //   }, 1000);
 
-function learnMore(message) {
+function learnMore(info) {
   document.getElementsByClassName("modal")[0].style.display = "block";
   setTimeout(() => document.getElementsByClassName("modal")[0].style.opacity = 1, 10);
   setTimeout(() => document.getElementsByClassName("modal-content")[0].style.transform = "translate(-50%, -50%) scale(1)", 10);
-  document.getElementsByClassName("modal-text")[0].innerHTML = message;
+  document.getElementsByClassName("modal-text")[0].innerHTML = info.desc;
+  document.getElementsByClassName("modal-location")[0].innerHTML = info.loc;
 }
 var cancel = false;
 function cancelClose() {
