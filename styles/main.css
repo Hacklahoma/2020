@@ -1154,7 +1154,7 @@ nav.live.open {
 #hardware .hardware-item {
   text-align: left;
   width: 190px;
-  white-space: nowrap;
+  white-space: nowrap !important;
   display: inline-block;
   margin: 2px 4px;
 }
