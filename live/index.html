@@ -164,13 +164,24 @@
                                 <p>Devon Corridor</p>
                             </div>
                         </div>
-                        <div class="item small">
-                            <div class="left">
+                        <div class="workshop">
+                            <div class="workshop-time">
                                 <p>12:30 PM</p>
                             </div>
-                            <div class="right">
-                                <h3>Find a Team Activity</h3>
-                                <p>Devon Activity Room</p>
+                            <div class="workshop-content">
+                                <div class="workshop-item">
+                                    <h3>Find a Team Activity</h3>
+                                    <p>Devon Activity Room
+                                        <span class="workshop-learnMore" 
+                                            onClick="learnMore({
+                                                title: 'Find a Team Activity', 
+                                                desc: 'Participate in a fun activity to find the right team for you.', 
+                                                loc: '12:30 PM | Devon Activity Room'
+                                        })">
+                                            Learn More
+                                        </span>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                         <div class="workshop">
@@ -179,8 +190,30 @@
                             </div>
                             <div class="workshop-content">
                                 <div class="workshop-item">
-                                    <h3>Paycom: Security</h3>
-                                    <p>Classroom A</p>
+                                    <h3>Paycom: Security Workshop</h3>
+                                    <p>Classroom A
+                                        <span class="workshop-learnMore" 
+                                            onClick="learnMore({
+                                                title: 'Paycom: Security Workshop', 
+                                                desc: '', 
+                                                loc: '1:15 PM | Classroom A'
+                                        })">
+                                            Learn More
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="workshop-item">
+                                    <h3>Northrop Grumman: Secure Coding Tech Talk</h3>
+                                    <p>Classroom B
+                                        <span class="workshop-learnMore" 
+                                            onClick="learnMore({
+                                                title: 'Northrop Grumman: Secure Coding Tech Talk', 
+                                                desc: 'Prepare for a shocking demonstration where hackers infiltrate, discover and exploit the vulnerabilities in your code! This presentation aims to accomplish a few things: First, to highlight the importance of secure coding practices. Second, we will showcase static code analyzers such as Coverity, SonarQube and HP Fortify. Finally, in the worst case scenario, demonstrate how attackers can exploit these vulnerabilities of poor coding practices. Get ready for an eye-opening journey into secure coding!', 
+                                                loc: '1:15 PM | Classroom B'
+                                        })">
+                                            Learn More
+                                        </span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -191,11 +224,29 @@
                             <div class="workshop-content">
                                 <div class="workshop-item">
                                     <h3>Hobby Lobby: Combinatorics & Machine Learning</h3>
-                                    <p>Classroom A</p>
+                                    <p>Classroom A
+                                        <span class="workshop-learnMore" 
+                                            onClick="learnMore({
+                                                title: 'Hobby Lobby: Combinatorics & Machine Learning', 
+                                                desc: '', 
+                                                loc: '2:30 PM | Classroom A'
+                                        })">
+                                            Learn More
+                                        </span>
+                                    </p>
                                 </div>
                                 <div class="workshop-item">
                                     <h3>Clevyr: AR Tech Talk</h3>
-                                    <p>Classroom B</p>
+                                    <p>Classroom B
+                                        <span class="workshop-learnMore" 
+                                            onClick="learnMore({
+                                                title: 'Clevyr: AR Tech Talk', 
+                                                desc: '', 
+                                                loc: '2:30 PM | Classroom B'
+                                        })">
+                                            Learn More
+                                        </span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -206,7 +257,16 @@
                             <div class="workshop-content">
                                 <div class="workshop-item">
                                     <h3>Microsoft: Azure Cloud</h3>
-                                    <p>Gallogly Activity Room</p>
+                                    <p>Gallogly Activity Room
+                                        <span class="workshop-learnMore" 
+                                            onClick="learnMore({
+                                                title: 'Microsoft: Azure Cloud', 
+                                                desc: '', 
+                                                loc: '3:45 PM | Gallogly Activity Room'
+                                        })">
+                                            Learn More
+                                        </span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -217,11 +277,29 @@
                             <div class="workshop-content">
                                 <div class="workshop-item">
                                     <h3>Jacob Robinet: IOS Development</h3>
-                                    <p>Classroom A</p>
+                                    <p>Classroom A
+                                        <span class="workshop-learnMore" 
+                                            onClick="learnMore({
+                                                title: 'Jacob Robinet: IOS Development', 
+                                                desc: 'Aside from being an OU student, Jacob Robinet is also the Apple Campus Representative for OU. His job is to engage students on campus with the use of Apple tech and showcase some of the beneficial educational features. In this workshop, Jacob will explore IOS Development.', 
+                                                loc: '5:00 PM | Classroom A'
+                                        })">
+                                            Learn More
+                                        </span>
+                                    </p>
                                 </div>
                                 <div class="workshop-item">
                                     <h3>JPMC: Design Thinking</h3>
-                                    <p>Classroom B</p>
+                                    <p>Classroom B
+                                        <span class="workshop-learnMore" 
+                                            onClick="learnMore({
+                                                title: 'JPMC: Design Thinking', 
+                                                desc: '', 
+                                                loc: '5:00 PM | Classroom B'
+                                        })">
+                                            Learn More
+                                        </span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -246,7 +324,7 @@
                                     <span class="workshop-learnMore" 
                                         onClick="learnMore({
                                             title: 'MLH: !Light', 
-                                            desc: '!Light is a fun game where participants are challenged to build a website using HTML, CSS without loading the webpage. The provided content covers how to run the activity and will teach you how to use our !Light code editor. It also covers how to run judging and engage an audience while they view participant submissions. Lastly you’ll also learn how to effectively market !Light to potential attendees on your campus.', 
+                                            desc: '!Light or No Light is a fun game where participants are challenged to build a website using HTML, CSS without loading the webpage.', 
                                             loc: '7:00 PM | Classroom A'
                                     })">
                                         Learn More
@@ -260,7 +338,16 @@
                             </div>
                             <div class="right">
                                 <h3>MLH: Capture the Flag</h3>
-                                <p>Classroom A</p>
+                                <p>Classroom A
+                                    <span class="workshop-learnMore" 
+                                        onClick="learnMore({
+                                            title: 'MLH: Capture the Flag', 
+                                            desc: '', 
+                                            loc: '8:00 PM | Classroom A'
+                                    })">
+                                        Learn More
+                                    </span>
+                                </p>
                             </div>
                         </div>
                         <div class="item small blue">
@@ -269,7 +356,16 @@
                             </div>
                             <div class="right">
                                 <h3>Origami</h3>
-                                <p>Classroom B</p>
+                                <p>Classroom B
+                                    <span class="workshop-learnMore" 
+                                        onClick="learnMore({
+                                            title: 'Origami', 
+                                            desc: 'Feeling frustrated? Yeah, me too. Join us in the origami workshop where you can take your mind of things and learn to build origami. Come back to your project with fresh energy and make a breakthrough!', 
+                                            loc: '9:00 PM | Classroom B'
+                                    })">
+                                        Learn More
+                                    </span>
+                                </p>
                             </div>
                         </div>
                         <div class="item small blue">
@@ -278,7 +374,16 @@
                             </div>
                             <div class="right">
                                 <h3>Super Smash Bros!</h3>
-                                <p>Devon Activity Room</p>
+                                <p>Devon Activity Room
+                                    <span class="workshop-learnMore" 
+                                        onClick="learnMore({
+                                            title: 'Super Smash Bros!', 
+                                            desc: 'Participate in the Super Smash Bros tournament to decide who will be crowned Hacklahoma 2020\'s best smasher!',
+                                            loc: '10:00 PM | Devon Activity Room'
+                                    })">
+                                        Learn More
+                                    </span>
+                                </p>
                             </div>
                         </div>
                         <div class="item small">
@@ -722,6 +827,14 @@
                                    Each team member of the winning team will receive a <strong>Branded MongoDB AirCharge Plus</strong>.</p>
                             </div>
                         </div>
+                        <div class="prizes-item">
+                            <div class="prizes-item-img"><img src="../img/assets/JPMorgan-prize-logo.png" /></div>
+                            <div class="prizes-item-content">
+                                <h1>Information on Accessibility</h1>
+                                <p>JPMorgan Chase's challenge to develop a web or mobile app that helps incentivize people – with and without disabilities – to provide more structured information on accessible spaces.
+                                   Each team member of the winning team will receive <strong>Bose SoundLink Wireless Headphones</strong>. <a href="../img/assets/JPMorgan-Challenge.pdf" target="_blank">Learn More</a></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -733,17 +846,20 @@
                 <div class="hardware-content live">
                     <h1>Available Hardware</h1>
                     <div class="hardware-container">
+                        <p class="hardware-item"><strong>6</strong> Arduino 101s</p>
+                        <p class="hardware-item"><strong>5</strong> Raspberry Pi 4 B Kits</p>
+                        <p class="hardware-item"><strong>4</strong> Google Home Minis</p>
+                        <p class="hardware-item"><strong>4</strong> Dell XPS 13 Laptops</p>
+                        <p class="hardware-item"><strong>3</strong> Leap Motions</p>
                         <p class="hardware-item"><strong>2</strong> Amazon Echo Dots</p>
                         <p class="hardware-item"><strong>2</strong> Amazon Echo Shows</p>
-                        <p class="hardware-item"><strong>5</strong> Raspberry Pi 4 B Kits</p>
-                        <p class="hardware-item"><strong>6</strong> Arduino 101s</p>
                         <p class="hardware-item"><strong>2</strong> FitBits</p>
-                        <p class="hardware-item"><strong>4</strong> Google Home Minis</p>
-                        <p class="hardware-item"><strong>3</strong> Leap Motions</p>
                         <p class="hardware-item"><strong>2</strong> Oculus Rifts</p>
-                        <p class="hardware-item"><strong>4</strong> Dell XPS 13 Laptops</p>
                         <p class="hardware-item"><strong>2</strong> Alienware Laptops</p>
-                        <p class="hardware-item"><strong>1</strong> Digi-Key Component Kit</p>
+                        <p class="hardware-item"><strong>2</strong> Soldering Stations</p>
+                        <p class="hardware-item"><strong>2</strong> VR Stations</p>
+                        <p class="hardware-item"><strong>2</strong> 3D Printers</p>
+                        <p class="hardware-item"><strong>1</strong> Digi-Key Kits</p>
                         <p class="hardware-item"><strong>1</strong> Grove Starter Kit</p>
                         <p class="hardware-item"></p>
                     </div>
@@ -788,6 +904,7 @@
                         <a href="https://mlh.io/" target="_blank"><img src="../img/sponsors/mlh.png" alt="MLH"></a>
                         <a href="https://weareasterisk.com/" target="_blank"><img src="../img/sponsors/asterisk.png" alt="Asterisk"></a>
                         <a href="http://hackp.ac/mlh-stickermule-hackathons" target="_blank"><img src="../img/sponsors/stickerMule.png" alt="Sticker Mule"></a>
+                        <a href="http://www.ou.edu/innovationhub" target="_blank"><img src="../img/sponsors/iHub.png" alt="Innovation Hub"></a>
                         <a href="https://www.sketch.com/" target="_blank"><img src="../img/sponsors/sketch.png" alt="Sketch"></a>
                         <a href="https://letsbabble.com/" target="_blank"><img src="../img/sponsors/babble.png" alt="Babble"></a>
                         <a href="https://starbucks.com/" target="_blank"><img src="../img/sponsors/starbucks.png" alt="Starbucks"></a>

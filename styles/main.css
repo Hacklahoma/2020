@@ -1004,14 +1004,19 @@ nav.live.open {
   margin: 10px 0;
   margin-right: 12px;
 }
+#schedule .workshop .workshop-content .workshop-item p {
+  font-size: .85em;
+  margin-top: 3px;
+}
 #schedule .workshop-learnMore {
   cursor: pointer;
   color: rgb(255, 255, 255);
   font-weight: 400;
   text-decoration: underline;
-  font-size: .7em;
+  font-size: .9em;
   position: relative;
-  bottom: 1.5px;
+  bottom: 1px;
+  left: 3px;
 }
 #schedule .item .right h3 {
   margin-top: 24px;
@@ -1074,6 +1079,7 @@ nav.live.open {
   margin-top: 28px;
 }
 .modal {
+  cursor: pointer;
   z-index: 10000;
   position: fixed;
   top: 0;
@@ -1085,6 +1091,7 @@ nav.live.open {
   transition: .2s;
 }
 .modal-content {
+  cursor: auto;
   z-index: 10010;
   touch-action: none;
   position: fixed;
@@ -1095,19 +1102,27 @@ nav.live.open {
   height: auto;
   min-width: 300px;
   width: 70vw;
+  max-width: 500px;
   border-radius: 10px;
-  padding: 20px;
-  padding-bottom: 20px;
+  padding: 25px 25px 20px 25px;
   background: white;
 }
 .modal-close {
   color: #D4616A;
   float: right;
-  font-size: 1.5em;
+  font-size: 2em;
+  font-weight: bold;
   margin-top: -5px;
 }
+.modal-title {
+  padding-right: 30px;
+}
 .modal-content p {
-  margin-top: 25px;
+  margin-top: 20px;
+}
+.modal-location {
+  color: #3663D0;
+  font-weight: bold;
 }
 #tracks.live {
   margin-bottom: -80px;
@@ -1122,7 +1137,7 @@ nav.live.open {
   margin-bottom: 15px;
 }
 #hardware .hardware-sub {
-  margin-top: 25px;
+  margin-top: 10px;
   font-size: 1em;
   font-weight: 600;
 }
