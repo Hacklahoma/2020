@@ -188,8 +188,9 @@ nav {
 }
 .header-content .register-info {
   margin-top: 30px;
-  color: #464646;
-  font-size: 1em;
+  color: #636363;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 .header-content .register {
   display: inline-block;
